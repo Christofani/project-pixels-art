@@ -1,11 +1,18 @@
 .color {
     border: solid black 1px;
-    width: 200px;
+    width: 50px;
     height: 50px;
     display: inline-block;
+    border-radius: 100%;
+    margin-left: 20px;
 }
 
-.button-random-color {
-    border-radius: 20px;
-    
+#button-random-color {
+    border-radius: 15px;
+    padding: 10px;
+    font-family: monospace;
+    background-color: rgb(26, 240, 229);
+    box-shadow: 1px 1px;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
 }
