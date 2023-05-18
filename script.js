@@ -8,7 +8,7 @@ titulo.innerText = 'Paleta de Cores';
 
 const elementoPai = document.querySelector('section');
 elementoPai.id = 'color-palette';
-const cores = ['black', 'blue', 'green', 'yellow'];
+const cores = ['black', 'blue', 'purple', 'yellow'];
 
 const criaElementos = () => {
   for (let index = 0; index < 4; index += 1) {
