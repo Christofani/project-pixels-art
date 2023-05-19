@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable no-shadow */
 /* eslint-disable sonarjs/no-unused-collection */
 /* eslint-disable no-param-reassign */
@@ -86,3 +87,32 @@ const criaPixels = () => {
   }
 };
 criaPixels();
+
+const elementDiv = () => {
+  const divsColor = document.querySelectorAll('.color');
+  for (const colorsDiv of divsColor) {
+    colorsDiv.addEventListener('click', (event) => {
+      const pSelecionado = document.querySelector('.selected');
+      event.target.classList.add('selected');
+      if (pSelecionado !== null) {
+        pSelecionado.classList.remove('selected');
+      }
+      event.target.classList.add('selected');
+    });
+  }
+};
+elementDiv();
+
+const setPixels = () => {
+  const pixelsSelected = document.querySelector('#pixel-board');
+  pixelsSelected.addEventListener('click', (event) => {
+    const selectedPixel = document.querySelector('.selected');
+    // eslint-disable-next-line max-len
+    if (selectedPixel === null || event.target.style.color === selectedPixel.style.backgroundColor) {
+      event.target.style.color = 'white';
+    } else {
+      event.target.style.color = selectedPixel.style.backgroundColor;
+    }
+  });
+};
+setPixels();
