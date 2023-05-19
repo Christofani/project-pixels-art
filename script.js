@@ -90,7 +90,8 @@ criaPixels();
 
 const elementDiv = () => {
   const divsColor = document.querySelectorAll('.color');
-  for (const colorsDiv of divsColor) {
+  for (let index = 0; index < divsColor.length; index += 1) {
+    const colorsDiv = divsColor[index];
     colorsDiv.addEventListener('click', (event) => {
       const pSelecionado = document.querySelector('.selected');
       event.target.classList.add('selected');
@@ -107,11 +108,9 @@ const setPixels = () => {
   const pixelsSelected = document.querySelector('#pixel-board');
   pixelsSelected.addEventListener('click', (event) => {
     const selectedPixel = document.querySelector('.selected');
-    // eslint-disable-next-line max-len
-    if (selectedPixel === null || event.target.style.color === selectedPixel.style.backgroundColor) {
-      event.target.style.color = 'white';
-    } else {
-      event.target.style.color = selectedPixel.style.backgroundColor;
+    const somentePx = event.target;
+    if (selectedPixel !== null && somentePx.classList.contains('pixel')) {
+      somentePx.style.backgroundColor = selectedPixel.style.backgroundColor;
     }
   });
 };
