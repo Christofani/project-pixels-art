@@ -6,6 +6,7 @@
   border-radius: 100%;
   margin-left: 20px;
 }
+
 #color-palette {
   display: flex;
   justify-content: center;
@@ -26,6 +27,7 @@
 #pixel-board {
   margin-top: 40px;
 }
+
 .bloco {
   display: flex;
   flex-direction: column;

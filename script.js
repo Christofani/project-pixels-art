@@ -33,14 +33,14 @@ const coresAleatorias = () => {
 };
 
 const SalvaCores = () => {
-  const cores = [];
+  const coresArray = [];
   const colorDivs = document.querySelectorAll('.color');
   for (let index = 0; index < colorDivs.length; index += 1) {
     const color = colorDivs[index];
     const cor = color.style.backgroundColor;
-    cores.push(cor);
+    coresArray.push(cor);
   }
-  localStorage.setItem('colorPalette', JSON.stringify(cores));
+  localStorage.setItem('colorPalette', JSON.stringify(coresArray));
 };
 
 const coresLocalStorage = () => {
@@ -78,7 +78,7 @@ const criaPixels = () => {
     const linhaindex = document.createElement('div');
     linhaindex.classList.add('linha');
     bloco.appendChild(linhaindex);
-    for (let index = 0; index < 5; index += 1) {
+    for (let indexL = 0; indexL < 5; indexL += 1) {
       const Blocoindex = document.createElement('div');
       Blocoindex.classList.add('pixel');
       linhaindex.appendChild(Blocoindex);
