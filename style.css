@@ -21,7 +21,16 @@
   background-color: rgb(11, 196, 186);
   box-shadow: 1px 1px;
   color: white;
-  margin-top: 30px;
+}
+
+#clear-board {
+  border-radius: 15px;
+  padding: 10px;
+  font-family: monospace;
+  background-color: rgb(11, 196, 186);
+  box-shadow: 1px 1px;
+  color: white;
+  margin-top: 10px;
 }
 
 #pixel-board {
@@ -55,6 +64,7 @@
   align-items: center;
   justify-content: center;
 }
+
 body {
   background-color: rgb(218, 245, 248);
 }

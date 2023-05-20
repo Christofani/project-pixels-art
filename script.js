@@ -115,3 +115,15 @@ const setPixels = () => {
   });
 };
 setPixels();
+
+const setClear = () => {
+  const clearPixel = document.querySelector('#clear-board');
+  clearPixel.addEventListener('click', () => {
+    const pixelsColor = document.querySelectorAll('.pixel');
+    for (let index = 0; index < pixelsColor.length; index += 1) {
+      const pixel = pixelsColor[index];
+      pixel.style.backgroundColor = 'white';
+    }
+  });
+};
+setClear();
