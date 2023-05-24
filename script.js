@@ -119,11 +119,42 @@ setPixels();
 const setClear = () => {
   const clearPixel = document.querySelector('#clear-board');
   clearPixel.addEventListener('click', () => {
+    const pixelspaint = [];
     const pixelsColor = document.querySelectorAll('.pixel');
     for (let index = 0; index < pixelsColor.length; index += 1) {
       const pixel = pixelsColor[index];
       pixel.style.backgroundColor = 'white';
+      pixelspaint[index] = 'white';
     }
+    localStorage.setItem('pixelBoard', JSON.stringify(pixelspaint));
   });
 };
 setClear();
+
+const salvaCoresPixels = () => {
+  const pixels = document.querySelectorAll('.pixel');
+  document.addEventListener('click', (event) => {
+    if (event.target.classList.contains('pixel')) {
+      const arrayPixels = [];
+      for (let index = 0; index < pixels.length; index += 1) {
+        const px = pixels[index];
+        const pxpaint = px.style.backgroundColor;
+        arrayPixels.push(pxpaint);
+      }
+      console.log('entrou');
+      localStorage.setItem('pixelBoard', JSON.stringify(arrayPixels));
+    }
+  });
+};
+salvaCoresPixels();
+
+const salvaPixels = () => {
+  const pxsalvos = JSON.parse(localStorage.getItem('pixelBoard'));
+  if (pxsalvos) {
+    const pixels1 = document.querySelectorAll('.pixel');
+    for (let index = 0; index < pixels1.length; index += 1) {
+      pixels1[index].style.backgroundColor = pxsalvos[index];
+    }
+  }
+};
+salvaPixels();
