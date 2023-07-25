@@ -1,5 +1,9 @@
 # Project Pixels Art
 
+## Demonstração
+
+<img src="assents/pixelart" />
+
 ## Stacks utílizadas  
 <div>
    <img width="50" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
