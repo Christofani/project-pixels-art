@@ -24,7 +24,9 @@ O objetivo do "Pixels Arte" é permitir aos usuários pintar blocos de forma ale
 Recursos utilizados:
 
 HTML: Responsável pela estruturação da página e pela criação dos elementos essenciais para a interação.
+
 CSS: Utilizado para o estilo visual da aplicação, tornando-a atraente e amigável ao usuário.
+
 JavaScript: Responsável pela lógica de programação, permitindo a interação com os blocos e a funcionalidade de escolher cores aleatórias.
 # 
 Como testar o projeto:
