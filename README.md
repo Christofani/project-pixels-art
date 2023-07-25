@@ -14,7 +14,7 @@
 ### Aprendizados
 
 
-Projeto "Pixels Arte" - Trybe
+Projeto "Pixels Arte"
 
 Bem-vindo ao repositório do projeto "Pixels Arte", desenvolvido durante minha jornada na Trybe. Neste projeto, foram aplicados conhecimentos em HTML, CSS e JavaScript para criar uma experiência interativa e criativa.
 
