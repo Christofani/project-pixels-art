@@ -5,6 +5,7 @@
   display: inline-block;
   border-radius: 100%;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 #color-palette {
@@ -15,7 +16,7 @@
 }
 
 body {
-  background-image: url('https://s2-techtudo.glbimg.com/1o2J-rf2G9qtlQlm82gaq-mFBec=/0x129:1024x952/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/7/i/ME2AxRRoygUyFPCDe0jQ/3.png');
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD678LXXmXleYWeaa4AGwuBF4MjBzqO0NDCg&usqp=CAU);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -29,6 +30,7 @@ body {
   background-color: rgb(11, 196, 186);
   box-shadow: 1px 1px;
   color: white;
+  cursor: pointer;
 }
 
 #clear-board {
@@ -39,6 +41,7 @@ body {
   box-shadow: 1px 1px;
   color: white;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 #pixel-board {
@@ -49,6 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 
 .linha {
