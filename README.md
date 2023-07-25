@@ -2,7 +2,7 @@
 
 ## Demonstração
 
-<img src="assents/pixelart" />
+<img src="assets/pixelart.gif" />
 
 ## Stacks utílizadas  
 <div>
