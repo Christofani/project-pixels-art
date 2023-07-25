@@ -13,7 +13,7 @@
 
 ### Aprendizados
 
-Esse é mais um projeto desenvolvido na Trybe , durante a realização do projeto foram usados os aprendizados em HTMl semântico ,CSS e JavaScript
+Esse é mais um projeto desenvolvido na Trybe , durante a realização do projeto foram usados os aprendizados em HTML ,CSS e JavaScript
 Desenvolvendo a lógica de programação funções e local Storage.
 
 ## Autor
